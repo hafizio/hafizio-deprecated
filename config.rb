@@ -1,4 +1,5 @@
 require "extensions/views"
+require "slim"
 
 activate :views
 activate :directory_indexes
