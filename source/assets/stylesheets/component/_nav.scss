@@ -1,39 +1,38 @@
 @import '../base/variables';
 
-nav {
+.nav {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
   background: white;
-  border-bottom: 2px solid $medium-gray;
 
-  ul {
+  &__lists {
     margin: 0px;
     display: flex;
     align-items: center;
     flex-flow: column wrap;
+  }
 
-    li {
-      color: $blue;
-      margin: 0px 10px;
-    }
+  &__list {
+    color: $blue;
+    margin: 0px 10px;
   }
 
   @media all and (min-width: 768px) {
-    ul {
+    &__lists {
       margin: 0px;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-flow: row wrap;
+    }
 
-      li {
-        color: $blue;
-        margin: 0px 10px;
+    &__list {
+      color: $blue;
+      margin: 0px 10px;
 
-        &:last-child {
-          margin-left: auto;
-        }
+      &--right:last-child {
+        margin-left: auto;
       }
     }
   }

@@ -1,0 +1,31 @@
+.cards {
+}
+
+.card {
+  @include span-columns(4);
+  border: 1px solid black;
+  border-radius: 5px;
+  background: white;
+
+  @include media($mobile) {
+    @include span-columns(12);
+  }
+
+  &__image {
+    @include background-image(url("http://media-cdn.tripadvisor.com/media/photo-s/05/19/6e/02/mandarin-oriental-kuala.jpg"));
+    height: 150px;
+  }
+
+  &__caption {
+    padding: 10px;
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      text-align: justify;
+    }
+  }
+}
+

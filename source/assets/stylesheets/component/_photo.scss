@@ -1,0 +1,10 @@
+.photo {
+  @include background-image(url("http://media-cdn.tripadvisor.com/media/photo-s/05/19/6e/02/mandarin-oriental-kuala.jpg"));
+  height: 100%;
+  background-position: center top, center;
+  background-repeat: no-repeat, repeat-x;
+
+  &__caption {
+    text-align: center;
+  }
+}
